@@ -1,11 +1,13 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: udgram-dev
+  AWS_BUCKET: arn:aws:s3:::s3-bucket-thanvv2
+  AWS_PROFILE: default
   AWS_REGION: us-east-1
-  JWT_SECRET: testsecret
+  JWT_SECRET: testing
   POSTGRES_DB: postgres
-  POSTGRES_HOST: udgram.czbcmeogwiyc.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: database-thanvv2.cjdfezjue4zy.us-east-1.rds.amazonaws.com
   URL: http://localhost:8100
+  NODE_OPTIONS: --max-old-space-size=1024
 metadata:
-  name: env-config
+  name: env-configmap
